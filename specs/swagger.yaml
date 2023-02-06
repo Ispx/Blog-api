@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  description: "Api de noticias"
+  version: "1.0.10"
+  title: "Swagger Blog Api"
+servers:
+  - url: http://localhost:8080
+    description: Remote server
+paths:
+  /login:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id: 
+                    type: integer
+                  token:
+                    type: string
+
+         
+
+
+      
