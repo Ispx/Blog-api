@@ -1,14 +1,6 @@
 # Specify the Dart SDK base image version using dart:<version> (ex: dart:2.12)
 FROM dart:stable AS build
 
-ENV HOST_SERVER=0.0.0.0
-ENV PORT_SERVER=8080
-ENV HOST_DB=0.0.0.0
-ENV PORT_DB=3306
-ENV USER_DB=dart_user
-ENV PASSWORD_DB=dart_pass
-ENV JWT_KEY=XxJWTxX
-
 # Resolve app dependencies.
 WORKDIR /app
 COPY pubspec.* ./
