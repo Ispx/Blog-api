@@ -1,7 +1,7 @@
 import '../utils.dart';
 
 class EnvConfig {
-  String _file = '.env';
+  String _file = 'lib/presenter/.env';
   static Map<String, dynamic> _data = {
     'HOST_SERVER': '0.0.0.0',
     'PORT_SERVER': '8080',
@@ -20,7 +20,7 @@ class EnvConfig {
   }
   factory EnvConfig(String file) => _i ?? EnvConfig._(file);
   Future<void> init() async {
-    // _data = await Utils.loadDataFile(_file);
+    _data = await Utils.loadDataFile(_file);
   }
 
   static Map<String, dynamic> get getData => _data;

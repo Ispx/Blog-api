@@ -9,7 +9,7 @@ import 'package:shelf/shelf.dart';
 import 'package:shelf_swagger_ui/shelf_swagger_ui.dart';
 
 void main(List<String> args) async {
-  await EnvConfig('.env').init();
+  await EnvConfig('lib/presenter/.env').init();
   DependencieInjector.init();
   final swaggerHandler = SwaggerUI(
     'specs/swagger.yaml',
