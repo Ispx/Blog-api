@@ -18,7 +18,7 @@ $ cd blog-api
 $ docker-compose up --build
 
 
-## Stacks
+## Tecnologias
 
 * Shelf
 * Shelf-router
