@@ -16,6 +16,7 @@ services:
     volumes:
       - './volumes/mysql:/var/lib/mysql'
       - "./query_db.sql:/docker-entrypoint-initdb.d/1.sql"
+
   dart-server:
     build: .
     ports:

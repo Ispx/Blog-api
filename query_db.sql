@@ -18,8 +18,7 @@ INSERT INTO `dart`.`usuarios` (
   `email`,
   `password`,
   `is_ativo`,
-  `dt_criacao`) VALUES ('Isaque Paixão','isaquespx98@gmail.com','Ispx@1998',1,NOW())
-ENGINE = InnoDB;
+  `dt_criacao`) VALUES ('Isaque Paixão','isaquespx98@gmail.com',"$pcks$64,10000,64$530f8afbc74536b9a963b4f1c4cb738bcea7403d4d606b6e074ec5d3baf39d18$5342d15b694ec2eddfb6805781d9ac434b56afbb10149b9da7ed3d8fe7419a64b289b8608f01277f418a4959385b12390bb061be323c5a6d9cfad4dfea5649c7",1,NOW());
 
 
 CREATE TABLE IF NOT EXISTS `dart`.`noticias` (

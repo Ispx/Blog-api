@@ -1,7 +1,7 @@
 import '../utils.dart';
 
 class EnvConfig {
-  String _file = 'lib/presenter/.env';
+  String _file = 'lib/presenter/env.csv';
   static Map<String, dynamic> _data = {
     'HOST_SERVER': '0.0.0.0',
     'PORT_SERVER': '8080',
