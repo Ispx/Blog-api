@@ -16,3 +16,12 @@ $ cd blog-api
 #### Criar e iniciar contêineres
 
 $ docker-compose up --build
+
+
+## Stacks
+
+* Shelf
+* Shelf-router
+* Password-dart
+* Jaguar-jwt
+* Mysql1
