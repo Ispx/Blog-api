@@ -1,9 +1,18 @@
 # Blog Api
 
+Uma api REST para criação de noticias desenvolvida em dart.
+
+
 ## Rodar a aplicação
 
-### Gerar o executável
-- dart compile exe bin/server.dart -o bin/server.exe 
+#### Clone o repositório
 
-### Rodando a aplicação via docker
-- docker-compose up --build
+$ git clone https://github.com/Ispx/Blog-api.git
+
+#### Navegue até o arquivo do projeto
+
+$ cd blog-api
+
+#### Criar e iniciar contêineres
+
+$ docker-compose up --build
