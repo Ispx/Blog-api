@@ -21,10 +21,10 @@ class NewsModelDao implements Dao<NewsModel> {
           DateTime.now().toString(),
           newsModel.userId
         ]);
-    if ((results?.isEmpty ?? true)) {
+    if ((results?.affectedRows ?? 0) == 0) {
       throw Exception("Não foi possível criar a noticia");
     }
-    return results!.map((e) => _parseFromMap(e.fields.cast())).first;
+    return newsModel;
   }
 
   @override

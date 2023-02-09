@@ -19,10 +19,10 @@ class UserModelDao implements Dao<UserModel> {
           true,
           DateTime.now().toString(),
         ]);
-    if ((results?.isEmpty ?? true)) {
+    if ((results?.affectedRows ?? 0) == 0) {
       throw Exception("Não foi possível criar o usuário");
     }
-    return results!.map((e) => _parseFromMap(e.fields.cast())).first;
+    return userModel;
   }
 
   @override

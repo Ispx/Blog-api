@@ -95,7 +95,7 @@ class NewsController extends ApiController {
               .payload['id_usuario'];
           final isUpdated =
               await newsService.update(NewsModelDto.fromJson(body));
-          return Response.ok(isUpdated);
+          return Response.ok(jsonEncode(isUpdated));
         } catch (e) {
           return Response.internalServerError(body: e.toString());
         }
@@ -114,7 +114,7 @@ class NewsController extends ApiController {
         );
       }
       final isDeleted = await newsService.delete(id);
-      return Response.ok(isDeleted);
+      return Response.ok(jsonEncode(isDeleted));
     });
   }
 }
